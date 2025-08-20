@@ -15,7 +15,7 @@ importers:
   apps/yueris:
     dependencies:
       '@yueris/utils':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../packages/utils
 
   packages/utils: {}
