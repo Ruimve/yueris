@@ -1,0 +1,17 @@
+41 error Error: Command failed with exit code 1: pnpm install --lockfile-only --ignore-scripts
+41 error Scope: all 3 workspace projects
+41 error  WARN  `node_modules` is present. Lockfile only installation will make it out-of-date
+41 error Progress: resolved 1, reused 0, downloaded 0, added 0
+41 error /Users/ruimve/Documents/work/yueris/apps/yueris:
+41 error  ERR_PNPM_FETCH_404  GET https://registry.npmjs.org/@yueris%2Futils: Not Found - 404
+41 error
+41 error This error happened while installing a direct dependency of /Users/ruimve/Documents/work/yueris/apps/yueris
+41 error
+41 error @yueris/utils is not in the npm registry, or you have no permission to fetch it.
+41 error
+41 error An authorization header was used: Bearer npm_[hidden]
+41 error     at makeError (/Users/ruimve/Documents/work/yueris/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+41 error     at handlePromise (/Users/ruimve/Documents/work/yueris/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+41 error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+41 error     at async VersionCommand.updatePackageVersions (/Users/ruimve/Documents/work/yueris/node_modules/.pnpm/lerna@8.2.3_encoding@0.1.13/node_modules/lerna/dist/index.js:10047:11)
+41 error     at async Promise.all (index 0)

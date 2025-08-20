@@ -1,6 +1,6 @@
 {
   "name": "yueris",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "packageManager": "pnpm@10.13.1",
   "type": "module",
   "dependencies": {
-    "@yueris/utils": "^1.0.3"
+    "@yueris/utils": "^1.0.4"
   },
   "gitHead": "881f1602aafb6898a328fd459ad2e522219f3e8c",
   "publishConfig": {
