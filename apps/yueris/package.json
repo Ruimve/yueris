@@ -9,10 +9,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.13.1",
   "type": "module",
   "dependencies": {
-    "@yueris/utils": "workspace:*"
-  }
+    "@yueris/utils": "1.0.1"
+  },
+  "gitHead": "881f1602aafb6898a328fd459ad2e522219f3e8c"
 }
