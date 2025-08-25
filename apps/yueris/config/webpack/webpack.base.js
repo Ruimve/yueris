@@ -39,14 +39,6 @@ export default {
       }
     ]
   },
-  devServer: {
-    static: { directory: path.resolve(__dirname, 'public') },
-    port: 5173,
-    open: '/index.html',
-    historyApiFallback: true,
-    host: '0.0.0.0',
-    allowedHosts: 'all'
-  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',

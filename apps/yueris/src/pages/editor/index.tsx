@@ -76,7 +76,7 @@ function EditorApp() {
                 <iframe
                   ref={iframeRef}
                   title="preview"
-                  src="http://localhost:5174/preview.html"
+                  src={`${process.site.CANVAS}/preview.html`}
                   onLoad={() => iframeRef.current?.contentWindow?.postMessage({ type: 'schema', payload: schema }, '*')}
                   style={{ width: '100%', height: '100%', border: 0, borderRadius: 8, background: '#fff', boxShadow: '0 6px 24px rgba(0,0,0,0.06)' }}
                 />

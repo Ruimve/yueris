@@ -2,6 +2,10 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 const __dirname = path.resolve();
 
+import {getSites} from '@yueris/sites';
+const sites = getSites('development');
+const canvas = sites['canvas'];
+
 /** @type {import('webpack').Configuration} */
 export default {
   mode: 'development',
@@ -41,9 +45,9 @@ export default {
   },
   devServer: {
     static: { directory: path.resolve(__dirname, 'public') },
-    port: 5174,
+    port: canvas.port,
     historyApiFallback: true,
-    host: '0.0.0.0',
+    host: canvas.host,
     allowedHosts: 'all'
   },
   plugins: [

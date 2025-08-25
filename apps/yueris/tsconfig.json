@@ -14,7 +14,7 @@
     "noEmit": true,
     "baseUrl": "./src"
   },
-  "include": ["src"]
+  "include": ["./src", "./config/define.d.ts"]
 }
 
 

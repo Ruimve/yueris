@@ -12,6 +12,73 @@ importers:
         specifier: ^8.2.3
         version: 8.2.3(@types/node@24.3.0)(encoding@0.1.13)
 
+  apps/canvas:
+    dependencies:
+      '@ant-design/cssinjs':
+        specifier: ^1.22.1
+        version: 1.24.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/react':
+        specifier: ^19.1.10
+        version: 19.1.10
+      '@types/react-dom':
+        specifier: ^19.1.7
+        version: 19.1.7(@types/react@19.1.10)
+      '@yueris/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
+      antd:
+        specifier: ^5.21.2
+        version: 5.27.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.26.0
+        version: 7.28.3
+      '@babel/preset-env':
+        specifier: ^7.26.0
+        version: 7.28.3(@babel/core@7.28.3)
+      '@babel/preset-react':
+        specifier: ^7.26.3
+        version: 7.27.1(@babel/core@7.28.3)
+      '@babel/preset-typescript':
+        specifier: ^7.26.0
+        version: 7.27.1(@babel/core@7.28.3)
+      '@yueris/sites':
+        specifier: workspace:*
+        version: link:../../packages/sites
+      babel-loader:
+        specifier: ^9.2.1
+        version: 9.2.1(@babel/core@7.28.3)(webpack@5.101.3)
+      css-loader:
+        specifier: ^7.1.2
+        version: 7.1.2(webpack@5.101.3)
+      html-webpack-plugin:
+        specifier: ^5.6.3
+        version: 5.6.4(webpack@5.101.3)
+      style-loader:
+        specifier: ^4.0.0
+        version: 4.0.0(webpack@5.101.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.2
+      webpack:
+        specifier: ^5.95.0
+        version: 5.101.3(webpack-cli@5.1.4)
+      webpack-cli:
+        specifier: ^5.1.4
+        version: 5.1.4(webpack-dev-server@5.2.2)(webpack@5.101.3)
+      webpack-dev-server:
+        specifier: ^5.1.0
+        version: 5.2.2(webpack-cli@5.1.4)(webpack@5.101.3)
+      webpack-merge:
+        specifier: ^6.0.1
+        version: 6.0.1
+
   apps/yueris:
     dependencies:
       '@ant-design/cssinjs':
@@ -48,6 +115,9 @@ importers:
       '@babel/preset-typescript':
         specifier: ^7.26.0
         version: 7.27.1(@babel/core@7.28.3)
+      '@yueris/sites':
+        specifier: workspace:*
+        version: link:../../packages/sites
       babel-loader:
         specifier: ^9.2.1
         version: 9.2.1(@babel/core@7.28.3)(webpack@5.101.3)
@@ -72,6 +142,11 @@ importers:
       webpack-dev-server:
         specifier: ^5.1.0
         version: 5.2.2(webpack-cli@5.1.4)(webpack@5.101.3)
+      webpack-merge:
+        specifier: ^6.0.1
+        version: 6.0.1
+
+  packages/sites: {}
 
   packages/utils: {}
 
@@ -4135,6 +4210,10 @@ packages:
   webpack-merge@5.10.0:
     resolution: {integrity: sha512-+4zXKdx7UnO+1jaN4l2lHVD+mFvnlZQP/6ljaJVb4SZiwIKeUnrT5l0gkT8z+n4hKpC+jpOv6O9R+gLtag7pSA==}
     engines: {node: '>=10.0.0'}
+
+  webpack-merge@6.0.1:
+    resolution: {integrity: sha512-hXXvrjtx2PLYx4qruKl+kyRSLc52V+cCvMxRjmKwoA+CBbbF5GfIBtR6kCvl0fYGqTUPKB+1ktVmTHqMOzgCBg==}
+    engines: {node: '>=18.0.0'}
 
   webpack-sources@3.3.3:
     resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
@@ -9029,6 +9108,12 @@ snapshots:
       - utf-8-validate
 
   webpack-merge@5.10.0:
+    dependencies:
+      clone-deep: 4.0.1
+      flat: 5.0.2
+      wildcard: 2.0.1
+
+  webpack-merge@6.0.1:
     dependencies:
       clone-deep: 4.0.1
       flat: 5.0.2
